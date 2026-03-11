@@ -1,23 +1,5 @@
-import path from "path";
-import { fileURLToPath } from "url";
-import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
+// vite.config.ts
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  base: '/portfolio3/',
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true,
-  },
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
-  },
-});
+  base: '/portfolio3/',  // اسم الـ repository بالضبط
+  plugins: [react()],
+})
