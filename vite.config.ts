@@ -1,5 +1,7 @@
-// vite.config.ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
 export default defineConfig({
-  base: '/portfolio3/',  // اسم الـ repository بالضبط
+  base: '/portfolio3/',
   plugins: [react()],
 })
